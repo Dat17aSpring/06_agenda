@@ -1,4 +1,4 @@
-# 2_11_mysql_spring
+# Dag 11 Mysql i Spring
 Agenda dag 11 d. 26-09-2017
 
 ## Forbind spring projekter med mysql ved hjælp af JDBC Driver
