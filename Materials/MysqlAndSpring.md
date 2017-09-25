@@ -10,5 +10,5 @@
 ````    
 And click on "Import Changes" in the lower right corner
 
-<img src="" width="300" />
+<img src="ImportChanges.png" width="300" />
     
