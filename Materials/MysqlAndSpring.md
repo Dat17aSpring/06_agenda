@@ -10,5 +10,5 @@
 ````    
 And click on "Import Changes" in the lower right corner
 
-<img src="ImportChanges.png" width="300" />
+<img src="https://github.com/dat17v1/2_11_mysql_spring/blob/master/Materials/img/ImportChanges.png" width="300" />
     
