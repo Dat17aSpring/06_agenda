@@ -1,4 +1,4 @@
-<h1> Add this to your <mark>pom.xml</mark> file </h1>
+## Add this to your pom.xml file
 ````      
 <dependency>
 	<groupId>mysql</groupId>
