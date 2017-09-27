@@ -27,8 +27,14 @@ And click on "Import Changes" in the lower right corner
     	IStudentRepository studentRepo = new StudentRepository();
 ````    
 
-## In the Repository you should add
+## In the Repository you should add a 
 
+<pre>    
+	<mark>@Repository</mark>
+	public class StudentRepository implements IStudentRepository {
+</pre>    
+Above your class definition
+and an attribute in the class.
 ````    
 	@Autowired
 	private JdbcTemplate jdbc;
