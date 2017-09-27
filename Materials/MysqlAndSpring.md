@@ -49,12 +49,16 @@ and use the different methods in that object to run the sql statements
 
 ### Update
 ````    
-	jdbc
+	jdbc.update("UPDATE students SET " +
+                "first_name ='"+ st.getFirstName() +"' , " +
+                "last_name='"+ st.getLastName() +"' ," +
+                "enrollmentdate='"+ st.getEnrollmentDate() +"' ," +
+                "cpr='"+ st.getCpr() +"' WHERE student_id = '"+ st.getStudentId() +"'");
 ```` 
 
 ### Delete
 ````    
-	jdbc
+	jdbc.update("DELETE FROM students WHERE student_id='" + id + "'");
 ```` 
 
 
@@ -64,7 +68,12 @@ and use the different methods in that object to run the sql statements
         while (users.next()) {
            usersList.add(new User(users.getString("name"), users.getString("email")));
         }
-```` 
+````     
+
+### Select (one)
+````    
+	Student student = jdbc.queryForObject("SELECT * FROM student where student_id ='" + id + "'", Student.class);
+````    
 
 
 
