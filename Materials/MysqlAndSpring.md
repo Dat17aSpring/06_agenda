@@ -20,7 +20,7 @@ And click on "Import Changes" in the lower right corner
 	spring.jpa.hibernate.ddl-auto=create-drop
 ````    
 
-## In your StudentController add ```` @Autowired  ```` above the repository field
+## In your StudentController add a ````@Autowired```` anotation above the repository field
 
 ````    
     @Autowired
