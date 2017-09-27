@@ -30,7 +30,7 @@ And click on "Import Changes" in the lower right corner
 ## In the Repository you should add a 
 
 <pre>    
-	<mark>@Repository</mark>
+	<b>@Repository</b>
 	public class StudentRepository implements IStudentRepository {
 </pre>    
 Above your class definition
