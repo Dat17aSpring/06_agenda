@@ -23,9 +23,43 @@ And click on "Import Changes" in the lower right corner
 ## In your StudentController add a ````@Autowired```` anotation above the repository field
 
 ````    
-    @Autowired
-    IStudentRepository studentRepo = new StudentRepository();
+    	@Autowired
+    	IStudentRepository studentRepo = new StudentRepository();
 ````    
+
+## In the Repository you should add
+
+````    
+	@Autowired
+	private JdbcTemplate jdbc;
+````    
+
+and use the different methods in that object to run the sql statements
+
+### Insert
+````    
+	jdbc.execute("insert into user(name,email)values('Henning','clbo@jkea.dk')");
+````     
+
+### Update
+````    
+	jdbc
+```` 
+
+### Delete
+````    
+	jdbc
+```` 
+
+
+### Select
+````    
+	SqlRowSet users = jdbc.queryForRowSet("SELECT * FROM user");
+        while (users.next()) {
+           usersList.add(new User(users.getString("name"), users.getString("email")));
+        }
+```` 
+
 
 
 
