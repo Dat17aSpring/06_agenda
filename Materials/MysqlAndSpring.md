@@ -14,10 +14,19 @@ And click on "Import Changes" in the lower right corner
 
 ## Add this to your application.properties file
 ````    
-spring.datasource.url=jdbc:mysql://localhost:3306/springbootdb
-spring.datasource.username=root
-spring.datasource.password=
-spring.jpa.hibernate.ddl-auto=create-drop
+	spring.datasource.url=jdbc:mysql://localhost:3306/springbootdb
+	spring.datasource.username=root
+	spring.datasource.password=
+	spring.jpa.hibernate.ddl-auto=create-drop
 ````    
+
+## In your StudentController add ```` @Autowired  ```` above the repository field
+
+````    
+    @Autowired
+    IStudentRepository studentRepo = new StudentRepository();
+````    
+
+
 
 
