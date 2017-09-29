@@ -52,10 +52,8 @@ Use the different methods in that object to run the sql statements
 ### Update
 ````    
 	jdbc.update("UPDATE user SET " +
-                "first_name ='"+ st.getFirstName() +"' , " +
-                "last_name='"+ st.getLastName() +"' ," +
-                "enrollmentdate='"+ st.getEnrollmentDate() +"' ," +
-                "cpr='"+ st.getCpr() +"' WHERE student_id = '"+ st.getStudentId() +"'");
+                "name ='"+ user.getName() +"' , " +
+                "email='"+ user.getemail() +"' WHERE user_id = '"+ user.getUserId() +"'");
 ```` 
 
 ### Delete
