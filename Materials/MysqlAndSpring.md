@@ -46,7 +46,7 @@ Use the different methods in that object to run the sql statements
 
 ### Insert
 ````    
-	jdbc.update("INSERT INTO user(name,email) VALUES('Henning','clbo@jkea.dk')");
+	jdbc.update("INSERT INTO user (name, email) VALUES ('"+ user.getName() + "','" + user.getEmail() + "')");
 ````     
 
 ### Update
