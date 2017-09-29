@@ -20,36 +20,38 @@ And click on "Import Changes" in the lower right corner
 	spring.jpa.hibernate.ddl-auto=create-drop
 ````    
 
-## In your StudentController add a ````@Autowired```` anotation above the repository field
+## In your UserController add a ````@Autowired```` anotation above the repository field
 
 ````    
     	@Autowired
-    	IStudentRepository studentRepo = new StudentRepository();
+    	IUserRepository userRepository = new UserRepository();
+
 ````    
-
-## In the Repository you should add a 
-
+## Create a UserRepository that implements the IUserRepository interface
+### In the Repository you should add a 
 <pre>    
 	<b>@Repository</b>
 	public class StudentRepository implements IStudentRepository {
 </pre>    
 Above your class definition
-and an attribute in the class.
+and two attributes in the class.
 ````    
 	@Autowired
 	private JdbcTemplate jdbc;
 ````    
 
-and use the different methods in that object to run the sql statements
+The jdbc object has diffent methods you will use for querering the database.
+
+Use the different methods in that object to run the sql statements
 
 ### Insert
 ````    
-	jdbc.execute("insert into user(name,email)values('Henning','clbo@jkea.dk')");
+	jdbc.update("INSERT INTO user(name,email) VALUES('Henning','clbo@jkea.dk')");
 ````     
 
 ### Update
 ````    
-	jdbc.update("UPDATE students SET " +
+	jdbc.update("UPDATE user SET " +
                 "first_name ='"+ st.getFirstName() +"' , " +
                 "last_name='"+ st.getLastName() +"' ," +
                 "enrollmentdate='"+ st.getEnrollmentDate() +"' ," +
@@ -58,11 +60,11 @@ and use the different methods in that object to run the sql statements
 
 ### Delete
 ````    
-	jdbc.update("DELETE FROM students WHERE student_id='" + id + "'");
+	jdbc.update("DELETE FROM user WHERE user_id='" + id + "'");
 ```` 
 
 
-### Select
+### Select (all)
 ````    
 	SqlRowSet users = jdbc.queryForRowSet("SELECT * FROM user");
         while (users.next()) {
@@ -72,7 +74,12 @@ and use the different methods in that object to run the sql statements
 
 ### Select (one)
 ````    
-	Student student = jdbc.queryForObject("SELECT * FROM student where student_id ='" + id + "'", Student.class);
+	
+	SqlRowSet user = jdbc.queryForRowSet("SELECT * FROM students where student_id ='" + id + "'");
+        while (user.next()) {
+           return new User(user.getInt("user_id"),user.getString("name"), user.getString("email")));
+        }
+
 ````    
 
 
