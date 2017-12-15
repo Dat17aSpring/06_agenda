@@ -3,7 +3,7 @@ Agenda dag 11 d. 26-09-2017
 
 ## Forbind spring projekter med mysql ved hjælp af JDBC Driver
 
-* [Det jeg gennemgik ved tavlen i step by step format kan i finde her](https://github.com/dat17v1/2_11_mysql_spring/blob/master/Materials/MysqlAndSpring.md)
+* [Det jeg gennemgik ved tavlen i step by step format kan i finde her](https://github.com/StudentsAdministration/11_Tutorial_MySql_JDBC)
 
 
 ### Links (læsestof)
