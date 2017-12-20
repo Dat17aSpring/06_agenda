@@ -1,9 +1,10 @@
-# Dag 11 Mysql i Spring
-Agenda dag 11 d. 26-09-2017
+# #11 Mysql, JDBC & Spring Boot
 
-## Forbind spring projekter med mysql ved hjælp af JDBC Driver
+Today you will learn to connect your Spring application with the Mysql Database. You will learn how to retreive the data from the database and add it to an ArrayList, and use this as the data in your Controller and Views.
 
-* [Det jeg gennemgik ved tavlen i step by step format kan i finde her](https://github.com/StudentsAdministration/11_Tutorial_MySql_JDBC)
+## Tutorial: Connect Mysql and Spring.
+This tutorial is eqevalent to what i cobered at the black board today:
+* [Tutorial: MySql JDBC in a Spring Project](https://github.com/StudentsAdministration/11_Tutorial_MySql_JDBC)
 
 
 ### Links (læsestof)
