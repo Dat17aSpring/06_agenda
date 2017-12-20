@@ -7,7 +7,7 @@ This tutorial is eqevalent to what i cobered at the black board today:
 * [Tutorial: MySql JDBC in a Spring Project](https://github.com/StudentsAdministration/11_Tutorial_MySql_JDBC)
 
 
-### Links (læsestof)
+### Literature
 * [JDBCTemplate](https://docs.spring.io/spring/docs/current/spring-framework-reference/html/jdbc.html),  [and](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/jdbc/core/JdbcTemplate.html)
 * [SqlRowSet](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/jdbc/support/rowset/SqlRowSet.html)
 
