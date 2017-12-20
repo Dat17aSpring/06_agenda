@@ -3,7 +3,7 @@
 Today you will learn to connect your Spring application with the Mysql Database. You will learn how to retreive the data from the database and add it to an ArrayList, and use this as the data in your Controller and Views.
 
 ## Tutorial: Connect Mysql and Spring.
-This tutorial is eqevalent to what i covered at the black board today:
+This tutorial is eqevalent to what I covered at the black board today:
 * [Tutorial: MySql JDBC in a Spring Project](https://github.com/StudentsAdministration/11_Tutorial_MySql_JDBC)
 
 
