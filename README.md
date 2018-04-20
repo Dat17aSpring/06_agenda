@@ -4,11 +4,12 @@ Today you will learn to connect your Spring application with the Mysql Database.
 
 ## Tutorial: Connect Mysql and Spring.
 This tutorial is eqevalent to what I covered at the black board today:
-* [Tutorial: MySql JDBC in a Spring Project](https://github.com/StudentsAdministration/11_Tutorial_MySql_JDBC)
+* [Tutorial: MySql JDBC in a Spring Project](https://github.com/dat17aSpring/06_Tutorial_MySql_JDBC)
 
 
 ### Literature
-* [JDBCTemplate](https://docs.spring.io/spring/docs/current/spring-framework-reference/html/jdbc.html),  [and](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/jdbc/core/JdbcTemplate.html)
+* [JDBCTemplate](https://docs.spring.io/spring/docs/current/spring-framework-reference/html/jdbc.html),  
+* [JdbcTemplate](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/jdbc/core/JdbcTemplate.html)
 * [SqlRowSet](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/jdbc/support/rowset/SqlRowSet.html)
 
 
